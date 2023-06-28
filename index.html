@@ -1,12 +1,34 @@
+<!--Doctype elementas - tai nurodymas narsyklei kokia HTML versija skaityti koda esanti apacioje,
+   siuo atveju HTML 5.0-->
 <!DOCTYPE html>
+<!--html tagas reiskia, kad cia prasideda programos pradzia, atributas lang reiskia projekto kalba-->
 <html lang="en">
+  <!--Head dalyje pateikiama informacija narsyklei kaip skaityti puslapi-->
   <head>
+    <!--Meta tagai yra savaime uzsidarantys tagai-->
+    <!--charset meta tagas pasako koki encodinima naudosime sitame puslapyje-->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Vewport meta tagas naudojamas norint atvaizduoti puslapius nepritaikytus mazesniems ekranams taisyklingai-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documnt</title>
+    <title>Serlokas</title>
   </head>
-  <body>
-    content
+  <!--Body dalyje yra pateikiamas visas turinys matomas vartotojui-->
+  <body style="background-color: lightgray">
+    <!--Main tagas reprezentuoja pagrindini turini-->
+    <!-- Tevinio elemento aukstis yra toks koks yra didziausios jo ne floatinamu vaikiniu elementu aukstis -->
+    <!-- Jeigu visi vaikiniai elementai yra floatinami, tevinis elementas praranda auksti, todel jam reikalingas display inline-block, 
+      kad ji vel matytume -->
+    <main style="background-color: red; width: 50%; margin-left: 25%; margin-top: 100px; display: inline-block;">
+      <img src="./Serlokas.jpg" style="width: 35%; background-color: blue; float: left;" alt="Serlokas ruko pypke menesienoje" />
+      <div style="background-color: blueviolet; width:50%; float: right; margin-top: 50px;">
+        <h1 style="text-align: center; font-size: 80px">404</h1>
+        <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus doloribus, iste sapiente porro nesciunt accusantium!</p>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </main>
   </body>
 </html>
+
+<!-- Margin - atstumas tarp elementu
+Margin: 10px; reiks, kad elementas atsistums visomis kryptimis aplinkui -->
+
